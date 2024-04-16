@@ -98,7 +98,7 @@ namespace WebApplication1.Controllers
                 visit.Id = Visits.Count + 1;
                 visit.AnimalId = id;
                 Visits.Add(visit);
-                return CreatedAtAction("GetVisit", new { id = visit.Id }, visit);
+                return CreatedAtAction("GetVisitsByAnimalId", new { id = visit.Id }, visit);
             }
         }
     
